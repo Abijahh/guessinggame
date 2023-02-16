@@ -6,17 +6,26 @@ user_name=input("What's your name ?" )
 print("Hello there " + user_name + "!")
 
 #generate a random number
-number = randint(10, 50)
+random_number = randint(10, 50)
 
 counter=0
 while counter <5:
     user_number =eval(input("Enter a number:"))
+    counter=counter =+1
+    
+    if user_number < random_number:
+        print("Your guess is too low")
+    elif user_number > random_number:
+        print("Your guess is too high")
+        break
+    
+print("Game over.")
+if user_number == random_number:
+    print("You win! ")
+else:
+    print("Game over!The correct number is")
+    print(random_number)
     
     
 
-
-
-#2. generate a random number
-
-#3. using a while loop
-# check if user input is equal to generated number
+    
